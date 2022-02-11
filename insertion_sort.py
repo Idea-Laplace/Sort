@@ -19,7 +19,7 @@ def insertion_sort(x: list):
         j = i
         position = j
         graphical_list(x)
-        sleep(1)
+        sleep(0.7)
         os.system('cls')
         while x[j] < x[j-1] and j > 0:
             x[j], x[j-1] = x[j-1], x[j]
@@ -27,7 +27,7 @@ def insertion_sort(x: list):
             j -= 1
             count += 1
             graphical_list(x)
-            sleep(1)
+            sleep(0.7)
             os.system('cls')
     graphical_list(x)
     print(f"Total steps: {count}")
@@ -35,10 +35,14 @@ def insertion_sort(x: list):
 
 
 if __name__ == '__main__':
-    x = [4, 7, 2, 1, 9, 6, 5, 3, 8]
-    y = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+    x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    y = [4, 7, 2, 1, 9, 6, 5, 3, 8]
+    z = [9, 8, 7, 6, 5, 4, 3, 2, 1]
     insertion_sort(x)
     input()
     os.system('cls')
     insertion_sort(y)
+    input()
+    os.system('cls')
+    insertion_sort(z)
     input()
