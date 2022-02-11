@@ -35,14 +35,14 @@ def insertion_sort(x: list):
 
 
 if __name__ == '__main__':
-    x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    y = [4, 7, 2, 1, 9, 6, 5, 3, 8]
-    z = [9, 8, 7, 6, 5, 4, 3, 2, 1]
-    insertion_sort(x)
+    best = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    normal = [4, 7, 2, 1, 9, 6, 5, 3, 8]
+    worst = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+    insertion_sort(best)
     input()
     os.system('cls')
-    insertion_sort(y)
+    insertion_sort(normal)
     input()
     os.system('cls')
-    insertion_sort(z)
+    insertion_sort(worst)
     input()
